@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check ticket money based on age</title>
+</head>
+<body>
+<label for="inputA">Enter your age:</label>
+<input type="number" id="inputA" required>
+<button type="button" onclick="checkMoney()">Check</button>
+</body>
+</html>
+
+<script>
+
+    function checkMoney() {
+
+        let a = document.getElementById("inputA").value;
+
+        if (a > 0 && a < 18) {
+            alert("Your ticket is $10");
+        }
+        else if (a >=18 && a < 60) {
+            alert("Your ticket is $15");
+        }
+        else {
+            alert("Your ticker is $13");
+        }
+    }
+
+</script>

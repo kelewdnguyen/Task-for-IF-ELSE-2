@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check the weather condition</title>
+</head>
+<body>
+<label for="inputA">Enter current temperature:</label>
+<input type="number" id="inputA" required>
+<button type="button" onclick="checkTem()">Check</button>
+</body>
+</html>
+
+<script>
+
+    function checkTem() {
+
+            let a = document.getElementById("inputA").value;
+
+            if (a >= 40) {
+                alert("It is quite hot outside, you shouldn't go out");
+            }
+            else if (a >= 25 && a < 40) {
+                alert("Perfect day to touch grass!!");
+            }
+            else {
+                alert("It is quite cold outside, you shouldn't go out");
+            }
+    }
+
+</script>

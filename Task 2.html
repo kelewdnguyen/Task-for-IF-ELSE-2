@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Age</title>
+</head>
+<body>
+<label for="inputA">Enter Age:</label>
+<input type="number" id="inputA" required>
+<button type="button" onclick="checkAge()">Check</button>
+</body>
+</html>
+
+<script>
+    function checkAge() {
+
+        let a = document.getElementById("inputA").value
+
+        if (a > 0 && a < 18) {
+            alert("Kid");
+        }
+        else if (a >=18 && a < 60) {
+            alert("Adult");
+        }
+        else {
+            alert("Old");
+        }
+
+    }
+</script>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check How many day in each month</title>
+</head>
+<body>
+<h1> Must Write in English</h1>
+<label for="inputA">Enter Month:</label>
+<input type="text" id="inputA" required>
+<button type="button" onclick="checkDay()">Check</button>
+</body>
+</html>
+
+<script>
+
+    function checkDay() {
+
+        let a = document.getElementById("inputA").value
+
+            /*
+        30 day: 4,6,9, 11
+        31 day: 1,3,5, 7,8.10.12
+        28 day: 2
+         */
+
+        switch (a) {
+            case 'June':
+            case 'September':
+            case 'November':
+            case 'june':
+            case 'september':
+            case 'november':
+                alert("30 Days");
+                break;
+            case'January':
+            case'March':
+            case'May':
+            case'July':
+            case'August':
+            case'October':
+            case'December':
+            case'january':
+            case'march':
+            case'may':
+            case'july':
+            case'august':
+            case'october':
+            case'december':
+                alert("31 Days");
+                break;
+            case'February':
+            case'february':
+                alert("28 or 29 Days")
+
+            default:
+                alert("Invaild Month or Wrong Language");
+
+
+        }
+    }
+
+</script>

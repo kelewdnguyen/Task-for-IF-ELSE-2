@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Reward Points based on the money spent</title>
+
+</head>
+<body>
+<h1>Currency is Australia Dolllar, so I would like to not see other currency</h1>
+<label for="inputA">Enter Money you have spent:</label>
+<input type="number" id="inputA" required>
+<button type="button" onclick="checkPoint()">Check</button>
+</body>
+</html>
+
+<script>
+
+    function checkPoint() {
+
+        let a = document.getElementById("inputA").value
+
+
+
+        if (a > 0 && a < 50) {
+            alert("You have spent " + a + " AUD. Now you have 50 Points");
+        }
+
+        else if (a >= 50 && a < 500) {
+            alert("You have spent " + a + " AUD. Now you have 150 Points")
+        }
+
+        else if (a >= 500 && a < 1000) {
+            alert("You have spent " + a + " AUD. Now you have 2000 Points")
+
+        }
+
+        else {
+            alert("You have spent " + a + " AUD. Now you have 300 Points")
+        }
+
+
+
+    }
+
+</script>

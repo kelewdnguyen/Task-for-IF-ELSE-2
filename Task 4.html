@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Food</title>
+</head>
+<body>
+
+<h2>Choose your type of food:</h2>
+<label>
+    <input type="radio" name="foodType" value="vegetable" checked> Vegetable
+</label>
+
+<label>
+    <input type="radio" name="foodType" value="meat"> Meat
+</label>
+
+<label>
+    <input type="radio" name="foodType" value="seafood"> Sea Food
+</label>
+
+<br>
+
+<button onclick="showFood()">Food Suggestion</button>
+
+<script>
+    function showFood() {
+
+        let foodDecide = document.querySelector('input[name="foodType"]:checked').value;
+
+        if (foodDecide === "vegetable") {
+            alert("I would recommend salad");
+        }
+
+        else if (foodDecide === "meat") {
+            alert("A beef wellington with some wine would be perfect");
+        }
+
+        else {
+            alert("A bowl of shrimp soup should do the trick");
+
+
+
+        }
+
+    }
+
+
+
+</script>
+
+
+
+</body>
+</html>
